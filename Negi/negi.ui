@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Negi</class>
+ <widget class="QMainWindow" name="Negi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Negi</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QMainWindow{
+        background-color: #222930;
+}
+
+QMessageBox{
+        background-color: #222930;
+}
+QLabel{
+        color: #e9e9e9;
+}
+
+QPushButton{
+    font-weight: bold;
+        color: #ffffff;
+        min-height:24px;
+        min-width:60px;
+        border-radius: 10px;
+        background-color: #4eb1ba;
+        border: none;
+        text-align: center;
+}
+
+
+QPushButton#buttonExecute{
+        font-size: 12pt;
+        border-radius: 20px;
+}
+
+QPushButton:pressed {
+        color: #222930;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="labelWelcome">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>游明朝</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>よ～</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelFilePath">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select a file</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonBrowse">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>54</y>
+      <width>90</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>90</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Select</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Goi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kanji</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="buttonExecute">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>147</y>
+      <width>440</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Execute</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>210</y>
+      <width>450</width>
+      <height>200</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select file type</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
